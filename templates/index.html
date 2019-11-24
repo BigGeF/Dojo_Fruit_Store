@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dojo Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap') }}">
+</head>
+<body>
+    <strong>Dojo Foruit Sotre</strong>
+    <form action="/checkout" method="post"></form>
+    <h4 class="ask">What would you like to buy?</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Fruit Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Strawberry</td>
+                <td>
+                    <select name="strawberry" >
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Raspberry</td>
+                <td>
+                    <select name="raspberry">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>
+                    <select name="apple">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="yourinfo">Your Information</h4>
+    <div >
+        <label for="firstname">First name</label>
+        <input type="text" class="form-control" name="first_name" placeholder="" value="" >
+    </div>
+    <div >
+        <label for="lastname">last_name name</label>
+        <input type="text" class="form-control" name="last_name" placeholder="" value="" >
+    </div>
+
+    <hr>
+    <button class="button" type="submit">Checkout</button>
+</form>
+</body>
+</html>
